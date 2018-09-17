@@ -2,7 +2,7 @@
     "name": "minapp-creator",
     "displayName": "minapp-creator",
     "description": "Create component and page of minapp from template.",
-    "version": "0.0.1",
+    "version": "1.0.1",
     "publisher": "idanloo",
     "repository": {
         "type": "git",
