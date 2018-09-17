@@ -53,7 +53,7 @@ export default <PathLib>{
   },
 
   get templatesPath() {
-    return `${this.extensionPath}/src/templates`
+    return `${this.extensionPath}/templates`
   },
 
   get pageTemplate() {
