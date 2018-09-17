@@ -1,0 +1,52 @@
+{
+    "name": "minapp-creator",
+    "displayName": "minapp-creator",
+    "description": "Create component and page of minapp from template.",
+    "version": "0.0.1",
+    "publisher": "Idan Loo",
+    "engines": {
+        "vscode": "^1.27.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:createPage",
+        "onCommand:createComponent",
+        "onCommand:addComponentPath"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "category": "Minapp",
+                "title": "Create Page",
+                "command": "createPage"
+            },
+            {
+                "category": "Minapp",
+                "title": "Create Component",
+                "command": "createComponent"
+            },
+            {
+                "category": "Minapp",
+                "title": "Add Component Path",
+                "command": "addComponentPath"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "tslint": "^5.8.0",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
