@@ -3,7 +3,11 @@
     "displayName": "minapp-creator",
     "description": "Create component and page of minapp from template.",
     "version": "0.0.1",
-    "publisher": "Idan Loo",
+    "publisher": "idanloo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/IdanLoo/minapp-creator.git"
+    },
     "engines": {
         "vscode": "^1.27.0"
     },
